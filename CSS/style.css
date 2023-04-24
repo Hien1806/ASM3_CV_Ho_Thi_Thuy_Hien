@@ -1,0 +1,859 @@
+.img_banner {
+   width: 100%;
+    height: 369px;
+    object-fit: cover;
+}
+
+#nav-bar {
+    text-align: center;
+}
+/*3 dòng là tối đa*/
+/*
+.text_truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+} */
+/* Thiết lập vị trí text và banner */
+#h-banner {
+    position: relative;
+    text-align: center;
+    /*opacity: 1; */
+}
+#h-banner img {
+    filter: brightness(1);
+
+}
+#h-banner h1 {
+    position: absolute;
+    top:30%;
+    left:35%;
+    color: white;
+    font-weight: bold;
+}
+#h-banner span {
+    position: absolute;
+    bottom:-40%;
+    right:29%;
+    font-size: 13px;
+    color: white;
+    opacity: 0.9;
+}
+
+/* thiết lập vị trí giữa navbar và ảnh avatar bo tròn */
+.h-navbar  {
+    position: relative;
+}
+.topnav  {
+    display: flex;
+    justify-content: center;
+}
+div.topnav >div {
+    height: 50px;
+    padding: 17.5px 10px;
+    border-left: 1px solid #ECECEC;
+    font-size: 10px;
+}
+.contain_avatar {
+    width: 250px;
+}
+.avatar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border: white 7px solid;
+    -moz-box-shadow: 0 0 3px 0 #f1f1f1;
+    -webkit-box-shadow: 0 0 3px 0 #f1f1f1;
+    box-shadow: 0 0 3px 0 #f1f1f1;
+}
+
+/* cho icon màu xanh */
+.icon-user,.icon-doc-text-inv, .icon-mail-alt, .icon-star-1{
+    color: #199cdb;
+}
+.item {
+    margin-left: 50px;
+}
+.item1 {
+    margin-top: -30px;
+    line-height: 0.5;
+}
+/* bỏ gạch dưới thẻ a */
+.h-navbar a {
+    text-decoration: none !important;
+}
+/* Phần thông tin */
+#about .about-col1 { /* thiết lập màu nền cho hai cột khác nhau */
+    background-color: #f5f5f5;
+}
+#about .about-col2 { /* thiết lập màu nền cho hai cột khác nhau */
+    background-color: #f0f0f0;
+}
+#about h1 {
+    font-size: 21px;
+}
+#about i {
+    margin-right : 10px;
+    color: #047aed;
+}
+
+/* Phần thông tin */
+
+/* Thiết lập khoảng cách giữa icon và các từ : kinh nghiệm, học vấn ... */
+#information .main-icon {
+    width: 25%;
+    color: #A8B1C8;
+    font-size: 30px;
+}
+#information span {
+    width: 75%;
+    font-weight: bold;
+    font-size: 20px;
+}
+#information em {
+    font-weight: normal;
+}
+
+/* Thiết lập phần border bao quanh mỗi phần */
+#information div.d-lg-flex> div { /* phần desktop */
+    border: solid 1px #DCDCDC;
+}
+#information .h-col { /* phần tablet */
+    border: solid 1px #DCDCDC;
+}
+#information ul {
+   padding-left: 16px;
+    color: #199CDB;
+}
+
+#information ul  li p{
+    margin: 0;
+    color: black;
+}
+
+/* Thiết lập grid cho 4 phần của phần sở thích */
+
+.hobby-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+}
+.hobby1-item p {
+    font-size: 12px;
+}
+.lang ul, .skill ul{
+   font-size: 12px;
+}
+/* bỏ phần gạch chân thẻ a */
+#information a{
+    text-decoration: none;
+}
+/* thiết lập khi hold chuột vào mới hiện border bottom */
+.lang ul li a:hover,.skill ul li a:hover{
+    border-bottom: solid blue 1px;
+}
+.list-style, p {
+    list-style: none;
+    padding-left: 0;
+    font-size: 12px;
+}
+/* Phần chứng chỉ */
+/* Cho phông chữ nhỏ chút */
+#h-certificate .cert-item h6{
+    font-size: 10px;
+}
+#h-certificate .cert-item p{
+    font-size: 10px;
+}
+.cert-item .margin-0{
+    margin: 0;
+}
+#h-certificate  {
+    background-color:#f7f7f7;
+}
+.pl-0 {
+    padding-right: 0!important;
+}
+
+/* Phần dự án */
+#h-project {
+    color: rgb(147, 146, 167);
+    background-color: rgb(255,255,255);
+}
+#h-project .row >div {
+
+
+}
+.name-project {
+    border: solid 1px #E2E2E2;
+    font-size: 11px;
+}
+
+table, td {
+    border: #E2E2E2 1px solid;
+   /* border-collapse: collapse; */
+}
+td {
+    padding: 3px 5px  3px  5px ;
+}
+
+tr {
+    border-bottom: #E2E2E2 1px solid!important;
+   vertical-align: top;
+}
+
+  table {
+      border-bottom: none;
+  }
+#h-project .name-project {
+    height: 45px;
+    align-items: center; /* cách căn text ở  giữa theo chiều dọc */
+    display: flex;
+}
+.icon-project {
+    height: 40px;
+    align-items: center;
+    display: flex;
+    border: #E2E2E2 1px solid;
+}
+.icon-project i {
+   font-size: 10px;
+}
+.icon-project i,.icon-project button,.icon-project span  {
+    margin-right: 5px;
+}
+button {
+    padding:0 2px;
+    border-bottom-left-radius: 20px!important;
+    border-top-left-radius: 20px!important;
+    border-top-right-radius: 20px!important;
+    border-bottom-right-radius: 20px!important;
+    background-color: #199CDB;
+    color: white;
+    border: 1px solid #199CDB;
+    font-size: 8px!important;
+    height: 17px;
+    width: 30px;
+    text-align: center;
+    vertical-align: center;
+
+}
+.content-project {
+    font-size: 10px;
+}
+/* Phần footer */
+ #h-footer .container {
+   background-color: #f7f7f7;
+     font-size: 13px;
+}
+#footer1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    gap:30px;
+}
+div#footer1 div.item-footer {
+    background-color: #34a7de ;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#footer1 > span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+div#footer1 span > span {
+    color:#9f9f9f;
+}
+
+/* Mobile */
+
+@media( max-width: 767px) {
+    #h-banner img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    #h-banner h1 {
+        position: absolute;
+        top:19%;
+        left:50%;
+        transform: translate(-50%,0);
+        font-size: 44px;
+        width:100%;
+    }
+    #h-banner span {
+        position: absolute;
+        top:25%;
+        left:50%;
+        transform: translate(-50%,0);
+        font-size: 17px;
+        width:100%;
+    }
+    .topnav  {
+        display: block;
+        justify-content: center;
+    }
+    .contain_avatar {
+        display: none;
+    }
+    div.topnav >div {
+        height: 77px;
+        font-size: 20px;
+    }
+    div.topnav >div i {
+        font-size: 22px;
+    }
+    div.topnav >div {
+        border: none;
+    }
+    #about h5 {
+        font-size: 31px;
+        margin-bottom: 90px;
+    }
+    #about p, #about ul li  {
+        font-size: 22px;
+    }
+    #about .row >div {
+        padding-top: 100px!important;
+    }
+    .about-col2 i { /* Chỉnh phần icon phần about lớn hơn một chút */
+        font-size: 28px;
+        margin: 0 20px;
+    }
+    .about-col2 i:first-child { /* Chỉnh phần icon phần about lớn hơn một chút */
+        margin-left: 0;
+    }
+    /* Thiết lập border phần certificate theo mẫu trên mobile */
+    #h-certificate .h-border-1px {
+        border-bottom: #d6c08d solid 1px!important;
+    }
+        #h-certificate .col-md{
+             border-bottom: #d6c08d solid 2px!important;
+         }
+        #h-certificate .h-border-top {
+            border-bottom: none!important;
+        }
+    #h-certificate .h-border-1px-md-lg {
+        border-bottom: none!important;
+    }
+
+    #h-certificate .cert-item h6 { /* phần chữ CHỨNG CHỈ*/
+        font-size: 22px!important;
+    }
+    #h-certificate .cert-item p { /* phần chữ CHỨNG CHỈ*/
+        font-size: 20px!important;
+    }
+
+
+
+  #information span{
+        display: inline-block;
+        width: 75%;
+    }
+    #information  .infor-name i{
+        display: inline-block;
+        float: left;
+        width: 25%;
+    }
+    .cert-item h4,  .cert-item h6, .cert-item p {
+        font-size: 24px;
+    }
+    #information .h-lg {
+        display: none;
+    }
+    .hobby-container {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #h-footer span {
+        display: none;
+    }
+    #h-project .name-project {
+        background-color: white!important;
+        font-weight: bold;
+    }
+}
+
+
+@media( min-width: 768px) {
+    /* Thiết lập vị trí giữa banner và chữ */
+    #h-banner h1 {
+        position: absolute;
+        top:20%;
+        left:50%;
+        transform: translate(-50%,0);
+        font-size: 37px;
+    }
+    #h-banner span {
+        position: absolute;
+        top:29%;
+        left:50%;
+        transform: translate(-50%,0);
+        font-size: 13px;
+    }
+    div.topnav >div {
+        height: 54px;
+        font-size: 12px;
+        padding: 0 30px;
+        line-height: 54px;
+    }
+    div.topnav >div:last-child {
+        border-right: 1px solid #ECECEC;
+    }
+    .contain_avatar {
+        width: 50px;
+    }
+    #information .infor-mobile {
+        display: none;
+    }
+
+    #information .flex-col {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    #information .flex-row {
+        display: flex;
+    }
+    .list-style, p {
+        list-style: none;
+        padding-left: 0;
+        font-size: 14px;
+    }
+    em {
+        font-size: 12px;
+    }
+    .hobby1-item p {
+        font-size: 12px;
+    }
+
+    #information .h-lg {
+        display: none;
+    }
+
+    .h-border-1px-md-lg {
+        border-top: solid 1px #d6c08d;
+        margin-top: 10px;
+    }
+
+   /* .cert-item img {
+        width: 300px;
+    } */
+
+   /* #h-project {
+        font-size: 14px;
+    }*/
+
+    #h-project span {
+        font-size: 12px;
+    }
+
+    #h-project .noneborder1 {
+     width: 25%;
+    }
+
+    #information .h-col {
+        margin-left: 15px;
+    }
+     #information .padding-left-15{
+         padding-left: 15px!important;
+     }
+    .h-border-1px {
+        border-right: #d6c08d solid 1px;
+    }
+    .h-border-bottom {
+        border-bottom: #d6c08d solid 1px;
+    }
+    .width50 {
+        width: 100%;
+    }
+    .width-50-md {
+        width: 50%;
+    }
+}
+@media( max-width: 991px) {
+    #about h5 {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
+    #about p, #about ul li {
+        font-size: 14px;
+    }
+
+    #about .row > div {
+        padding-top: 90px !important;
+    }
+
+    #information .main-icon {
+        width: 25%;
+        position: relative;
+        left: 70%;
+        font-size: 40px;
+    }
+
+    #information i + span {
+        display: block;
+        font-size: 24px;
+        line-height: 20px;
+        margin-bottom: 75px;
+        font-weight: bold;
+    }
+
+    #information span {
+        font-size: 13px;
+        font-weight: normal;
+    }
+
+    .skill-item {
+        height: 10px;
+        margin-bottom: 0;
+        padding-top: 8px;
+        margin-bottom: 20px;
+    }
+
+    .skill-item > span {
+        display: inline-block;
+        width: 50px !important;
+        height: 2px;
+        background-color: #199cdb;
+        margin-right: 10px;
+        vertical-align: top;
+    }
+
+    .skill-item span.h-bb {
+        border-bottom: 2px solid #199cdb;
+    }
+
+    .skill-item span.h-bb-grey {
+        border-bottom: 2px solid #F3F3F3;
+    }
+
+    #information .skill i + span { /* khoảng cách giữa chữ kĩ năng và nội dung thu hẹp hơn các phần khác */
+        margin-bottom: 45px;
+
+    }
+
+    .exp li em {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .hobby div > i {
+        font-size: 18px;
+    }
+
+    .hobby p {
+        margin-top: 8px;
+    }
+
+    #h-certificate .cert-item h6 {
+        font-size: 14px;
+    }
+
+    #h-certificate .cert-item p {
+        font-size: 14px;
+    }
+
+    #h-certificate h5 {
+        font-size: 24px;
+    }
+
+    .h-w-50 {
+        width: 50%;
+
+    }
+
+    .border-white {
+        border-right: 1px solid white;
+    }
+
+    #h-project h5 {
+        font-size: 24px;
+    }
+
+    #h-project .name-project {
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: auto;
+    }
+
+    .icon-project i {
+        font-size: 20px;
+    }
+
+    #h-project .icon-project span {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 0 2px;
+        border-bottom-left-radius: 15px !important;
+        border-top-left-radius: 15px !important;
+        border-top-right-radius: 15px !important;
+        border-bottom-right-radius: 15px !important;
+        background-color: #199CDB;
+        color: white;
+        border: 1px solid #199CDB;
+        font-size: 12px !important;
+        height: 25px;
+        width: 50px;
+        text-align: center;
+        vertical-align: center;
+    }
+
+    .icon-project {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .h-hide {
+        visibility: hidden;
+
+    }
+
+    .icon-project i, .icon-project button, .icon-project span {
+        margin-right: 5px;
+    }
+
+    .content-project {
+        font-size: 14px;
+    }
+    #h-footer .container {
+        font-size: 16px;
+    }
+    #h-footer .container i {
+        font-size: 12px;
+    }
+    div#footer1 div.item-footer {
+        height: 30px;
+        width: 30px;
+    }
+}
+    @media( min-width: 992px) {
+    #h-banner h1 {
+        position: absolute;
+        top:13%;
+        left:50%;
+        transform: translate(-50%,0);
+        font-size: 30px;
+    }
+    #h-banner span {
+        position: absolute;
+        top:24%;
+        left:50%;
+        transform: translate(-50%,0);
+        font-size: 13px;
+        font-weight: bold;
+        color: white;
+    }
+    div.topnav >div {
+        height: 50px;
+        padding: 0px 10px;
+        border-left: 1px solid #ECECEC;
+        font-size: 10px;
+        line-height: 50px;
+
+    }
+    .contain_avatar {
+        width: 250px;
+
+    }
+    #information .h-md div { /* them div sau #information .h-md để có ưu tiên cao hơn #information .flex-row: display flex */
+        display: none;
+    }
+    #information .infor-mobile {
+        display: none;
+    }
+    #information div.d-lg-flex {
+        gap: 20px;
+    }
+        .list-style, p {
+            list-style: none;
+            padding-left: 0;
+            font-size: 12px;
+        }
+        #information div.skill > span {
+            font-size: 12px;
+            font-weight: normal;
+        }
+        .skill-item {
+            height: 10px;
+            margin-bottom: 0;
+            padding-top: 8px;
+            margin-bottom: 20px;
+        }
+        .skill-item > span{
+            display: inline-block;
+            width: 50px!important;
+            height: 2px;
+            background-color: #199cdb;
+            margin-right: 10px;
+            vertical-align: top;
+        }
+        .skill-item span.h-bb {
+            border-bottom: 2px solid #199cdb;
+        }
+        .skill-item span.h-bb-grey {
+            border-bottom: 2px solid #F3F3F3;
+        }
+        .hobby p {
+            margin-top: 8px;
+        }
+
+    /* .cert-item img {
+        width: 300px;
+
+    } */
+    #h-project span {
+        font-size: 10px;
+    }
+
+    .width50 {
+        width: 40%;
+    }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+    #about h5 {
+        font-size: 31px;
+        margin-bottom: 90px;
+    }
+    #about p, #about ul li  {
+        font-size: 22px;
+    }
+    #information .flex-row {
+        display: none;
+    }
+    #information .infor-mobile {
+        border: solid 1px #DCDCDC;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    #information .infor-mobile div.infor-name {
+        position: relative;
+    }
+    #information .infor-mobile div.infor-name i {
+        position: absolute;
+        left: 70%;
+        font-size: 60px;
+         }
+    #information .infor-mobile div.infor-name span {
+        font-size: 40px;
+    }
+    #information .infor-mobile  ul ::marker {
+        font-size: 40px;
+    }
+    #information .infor-mobile  ul li p{
+        font-size: 25px;
+        color: #777777;
+    }
+    #information .infor-mobile  ul li p:first-child{
+        color: black;
+    }
+    #information .infor-name {
+        margin-bottom: 75px;
+    }
+    #information .infor-mobile em {
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+    #information  .skill span {
+        font-size: 21px;
+    }
+    #information .skill p {
+        padding-top: 15px;
+    }
+    #information  .skill p > span {
+        width: 70px!important;
+        height: 4px;
+    }
+    #information .skill .h-bb-grey {
+        border-bottom: 0;
+        background-color: #F3F3F3;;
+    }
+    #information .infor-mobile p > em {
+        font-size: 22px;
+    }
+    #information .infor-mobile .hobby-item i {
+        font-size: 30px;
+    }
+    #information .infor-mobile .hobby-item p {
+        font-size: 25px;
+    }
+    #h-certificate h5 {
+        font-size: 41px;
+        margin-bottom: 40px;}
+    #h-project h5 {
+        font-size: 41px;
+        margin-bottom: 40px;
+    }
+    #h-project .name-project {
+    font-size: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    button {
+        padding: 0 2px;
+        border-bottom-left-radius: 25px !important;
+        border-top-left-radius: 25px !important;
+        border-top-right-radius: 25px !important;
+        border-bottom-right-radius: 25px !important;
+        border: 1px solid #199CDB;
+        font-size: 20px !important;
+        height: 50px;
+        width: 100px;
+    }
+    #h-project .icon-project span {
+        font-size: 22px;
+    }
+    .icon-project i {
+        font-size: 35px;
+    }
+    .icon-project {
+        flex-direction: column;
+      align-items: start;
+        height: auto;
+        gap:10px;
+    }
+    .h-hide {
+       display: none;
+    }
+    .content-project {
+        font-size: 22px;
+    }
+    td {
+        padding: 15px 10px;
+    }
+    #h-footer .container i {
+        font-size: 30px;
+    }
+    div#footer1 div.item-footer {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
